@@ -1,76 +1,99 @@
-🅿️ ParkEasy — Smart Parking Management System
-A full-stack parking management web application developed as part of the Infosys Springboard Internship – Team A.
-Built with Spring Boot (backend) and React + Vite (frontend), ParkEasy streamlines parking slot booking, real-time availability tracking, payments, and admin management.
+# 🅿️ ParkEasy — Smart Parking Management System
 
-📋 Table of Contents
-About the Project
-Features
-Tech Stack
-Project Structure
-Getting Started
-Prerequisites
-Backend Setup
-Frontend Setup
-Environment Variables
-API Overview
-Screenshots
-Team
-License
-📌 About the Project
-ParkEasy is a smart parking spot finder and booking system that helps drivers locate, book, and pay for parking spots with ease. Admins can manage parking lots, monitor bookings, generate reports, and oversee users — all from a dedicated dashboard.
+A full-stack parking management web application developed as part of the **Infosys Springboard Internship – Team A**. 
 
-✨ Features
-👤 User Features
-🔐 Authentication — Register, Login, and JWT-based session management
-🔑 Forgot Password — OTP-based password reset via email
-🗺️ Book Parking — Interactive map (Leaflet) to locate and book parking spots
-📄 My Bookings — View, manage, and cancel bookings
-💳 Payments — Razorpay-integrated online payment with payment history
-🧾 QR Code — Auto-generated QR code for confirmed bookings
-🚗 Vehicle Management — Add and manage registered vehicles
-📊 Parking Status — Real-time slot availability display
-💬 Feedback — Submit feedback/reviews for parking lots
-📬 Contact Us — Send inquiries directly via email
-👤 Profile Management — Update personal info and password
-🛡️ Admin Features
-📊 Dashboard — Analytics overview with charts (ApexCharts / Recharts)
-🏢 Manage Parking — Create and manage parking lots, floors, and slots
-📅 Manage Bookings — View, approve, and cancel user bookings
-👥 Manage Users — View, activate, or deactivate user accounts
-📈 Reports — Generate & export PDF reports (jsPDF)
-👤 Admin Profile — Manage admin account details
-🛠️ Tech Stack
-Backend
-Technology	Version	Purpose
-Java	17	Language
-Spring Boot	3.3.5	Application framework
-Spring Security	—	Authentication & authorization
-Spring Data JPA	—	Database ORM
-MySQL	—	Relational database
-JWT (jjwt)	0.12.6	Token-based auth
-Razorpay Java SDK	1.4.4	Payment gateway
-Spring Mail	—	Email (SMTP / Gmail)
-ZXing	3.5.1	QR code generation
-Springdoc OpenAPI	2.6.0	Swagger API docs
-Lombok	—	Boilerplate reduction
-ModelMapper	3.2.4	DTO mapping
-spring-dotenv	3.0.0	.env support
-Frontend
-Technology	Version	Purpose
-React	19	UI framework
-Vite	8 (beta)	Build tool & dev server
-React Router DOM	7	Client-side routing
-TailwindCSS	4	Styling
-Axios	—	HTTP client
-Leaflet / React-Leaflet	—	Interactive maps
-ApexCharts / Recharts	—	Admin charts
-Razorpay (frontend)	—	Payment checkout
-jsPDF + AutoTable	—	PDF export
-React QR Code	—	QR code display
-Swiper	—	Carousel components
-Lucide React / React Icons	—	Icon libraries
-Radix UI	—	Accessible UI primitives
-📁 Project Structure
+Built with **Spring Boot** (backend) and **React + Vite** (frontend), ParkEasy streamlines parking slot booking, real-time availability tracking, payments, and admin management.
+
+---
+
+## 📋 Table of Contents
+- [About the Project](#-about-the-project)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Backend Setup](#backend-setup)
+  - [Frontend Setup](#frontend-setup)
+- [Environment Variables](#-environment-variables)
+- [API Overview](#-api-overview)
+- [Database Entities](#%EF%B8%8F-database-entities)
+- [Team](#-team)
+
+---
+
+## 📌 About the Project
+
+**ParkEasy** is a smart parking spot finder and booking system that helps drivers locate, book, and pay for parking spots with ease. Admins can manage parking lots, monitor bookings, generate reports, and oversee users — all from a dedicated, comprehensive dashboard.
+
+---
+
+## ✨ Features
+
+### 👤 User Features
+* **🔐 Authentication** — Secure Register, Login, and JWT-based session management.
+* **🔑 Forgot Password** — OTP-based password reset via automated email.
+* **🗺️ Book Parking** — Interactive map (Leaflet) to physically locate and book parking spots.
+* **📄 My Bookings** — View, manage, and cancel active or past bookings.
+* **💳 Payments** — Razorpay-integrated online payment processing with complete payment history.
+* **🧾 QR Code** — Auto-generated QR code for quick check-ins of confirmed bookings.
+* **🚗 Vehicle Management** — Add, update, and manage multiple registered vehicles.
+* **📊 Parking Status** — Real-time display of slot availability.
+* **💬 Feedback** — Submit feedback/reviews for individual parking lots.
+* **📬 Contact Us** — Send inquiries directly to the team via email.
+* **👤 Profile Management** — Dynamically update personal info and account passwords.
+
+### 🛡️ Admin Features
+* **📊 Dashboard** — In-depth analytics overview built with rich charts (ApexCharts / Recharts).
+* **🏢 Manage Parking** — Create, update, and manage parking lots, floors, and specific slots.
+* **📅 Manage Bookings** — Monitor, approve, or cancel user bookings globally.
+* **👥 Manage Users** — View, activate, or deactivate user accounts securely.
+* **📈 Reports** — Generate & export comprehensive system PDF reports (jsPDF).
+* **👤 Admin Profile** — View and manage admin account security details.
+
+---
+
+## 🛠. Tech Stack
+
+### Backend
+| Technology | Version | Purpose |
+| :--- | :--- | :--- |
+| **Java** | 17 | Core programming language |
+| **Spring Boot** | 3.3.5 | Primary application framework |
+| **Spring Security** | — | Authentication & authorization security layers |
+| **Spring Data JPA** | — | Database ORM mapping |
+| **MySQL** | — | Relational database management |
+| **JWT (jjwt)** | 0.12.6 | Secure Token-based auth |
+| **Razorpay Java SDK** | 1.4.4 | Payment gateway integration |
+| **Spring Mail** | — | Automated Email handling (SMTP / Gmail) |
+| **ZXing** | 3.5.1 | QR code generation utilities |
+| **Springdoc OpenAPI**| 2.6.0 | Automated Swagger API interactive documentation |
+| **Lombok** | — | Boilerplate code reduction |
+| **ModelMapper** | 3.2.4 | Clean DTO object mapping |
+| **spring-dotenv** | 3.0.0 | Environment `.env` configuration file support |
+
+### Frontend
+| Technology | Version | Purpose |
+| :--- | :--- | :--- |
+| **React** | 19 | Frontend UI component framework |
+| **Vite** | 8 (beta) | High-speed build tool & development server |
+| **React Router DOM** | 7 | Client-side routing management |
+| **TailwindCSS** | 4 | Modern utility-first styling |
+| **Axios** | — | Clean HTTP client requests |
+| **Leaflet / React-Leaflet** | — | Interactive map generation |
+| **ApexCharts / Recharts** | — | Dynamic Admin analytical charts |
+| **Razorpay (frontend)** | — | Client-side payment checkout layer |
+| **jsPDF + AutoTable** | — | Client-side PDF generation and export |
+| **React QR Code** | — | Dynamic rendering of booking QR codes |
+| **Swiper** | — | Carousel and slider layout UI components |
+| **Lucide React / React Icons** | — | Extensive icon vector libraries |
+| **Radix UI** | — | Accessible, unstyled UI component primitives |
+
+---
+
+## 📁 Project Structure
+
+```text
 ParkEasy/
 ├── backend/                    # Spring Boot application
 │   ├── src/main/java/com/infosys/ParkEasy/
@@ -80,7 +103,7 @@ ParkEasy/
 │   │   │   ├── UserController
 │   │   │   ├── ParkingController
 │   │   │   ├── PaymentController
-│   │   │   ├── BookingController (via Admin)
+│   │   │   ├── BookingController
 │   │   │   ├── FeedbackController
 │   │   │   ├── ContactController
 │   │   │   ├── QRController
@@ -118,118 +141,3 @@ ParkEasy/
     │   ├── routes/             # Route configuration
     │   └── layouts/            # Layout wrappers
     └── package.json
-🚀 Getting Started
-Prerequisites
-Java 17 or higher
-Maven (or use the included mvnw wrapper)
-Node.js v18+ and npm
-MySQL database (local or remote)
-A Gmail account with an App Password for SMTP
-A Razorpay account (test keys are fine during development)
-Backend Setup
-Clone the repository:
-
-git clone https://github.com/your-username/ParkEasy.git
-cd ParkEasy/backend
-Create a .env file in the backend/ directory:
-
-SPRING_APPLICATION_NAME=ParkEasy
-SERVER_PORT=8080
-SERVER_SERVLET_CONTEXT_PATH=/api
-
-DB_URL=jdbc:mysql://localhost:3306/parkeasy_db
-DB_USERNAME=root
-DB_PASSWORD=your_mysql_password
-DB_DRIVER=com.mysql.cj.jdbc.Driver
-
-JPA_DDL_AUTO=update
-JPA_SHOW_SQL=true
-HIBERNATE_DIALECT=org.hibernate.dialect.MySQLDialect
-
-JWT_SECRET_KEY=your_jwt_secret_key_here
-
-ALLOWED_ORIGINS=http://localhost:5173
-Create the MySQL database:
-
-CREATE DATABASE parkeasy_db;
-Run the backend:
-
-# Windows
-./mvnw.cmd spring-boot:run
-
-# Linux / macOS
-./mvnw spring-boot:run
-The backend starts at: http://localhost:8080/api
-Swagger UI: http://localhost:8080/api/swagger-ui/index.html
-
-Frontend Setup
-Navigate to the frontend directory:
-
-cd ParkEasy/frontend
-Create a .env file in the frontend/ directory:
-
-VITE_API_BASE_URL=http://localhost:8080/api
-VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
-Install dependencies:
-
-npm install
-Start the development server:
-
-npm run dev
-The frontend runs at: http://localhost:5173
-
-🔐 Environment Variables
-Backend (backend/.env)
-Variable	Description
-SPRING_APPLICATION_NAME	Application name
-SERVER_PORT	Server port (default: 8080)
-SERVER_SERVLET_CONTEXT_PATH	API base path (e.g., /api)
-DB_URL	MySQL JDBC URL
-DB_USERNAME	MySQL username
-DB_PASSWORD	MySQL password
-DB_DRIVER	JDBC driver class
-JPA_DDL_AUTO	Hibernate DDL mode (update, create, etc.)
-JPA_SHOW_SQL	Log SQL queries (true/false)
-HIBERNATE_DIALECT	Hibernate MySQL dialect
-JWT_SECRET_KEY	Secret key for JWT signing
-ALLOWED_ORIGINS	CORS allowed origins
-Frontend (frontend/.env)
-Variable	Description
-VITE_API_BASE_URL	Backend API base URL
-VITE_RAZORPAY_KEY_ID	Razorpay public key
-📡 API Overview
-Module	Base Path	Description
-Auth	/api/auth	Register, Login, Password Reset
-User	/api/user	Profile, Vehicle management
-Parking	/api/parking	Parking lots, slots, availability
-Booking	/api/booking	Create and manage bookings
-Payment	/api/payment	Create orders, verify payments
-Feedback	/api/feedback	Submit and retrieve feedback
-Contact	/api/contact	Send contact enquiries
-QR Code	/api/qr	Generate booking QR codes
-Admin	/api/admin	Admin-only management endpoints
-Public	/api/public	Unauthenticated public routes
-Full API documentation is available via Swagger UI at:
-http://localhost:8080/api/swagger-ui/index.html
-
-🗃️ Database Entities
-Entity	Description
-User	User accounts with roles
-Parking	Parking lot details
-Floor	Floors within a parking lot
-ParkingSpot	Individual parking spots
-NormalSlot	Slot metadata
-Booking	Parking reservations
-Vehicle	Registered user vehicles
-PaymentOrder	Razorpay payment orders
-PaymentTransaction	Completed payment records
-Feedback	User reviews and ratings
-Address	Location/address records
-🤝 Team
-This project was developed by Team A as part of the Infosys Springboard Internship Program.
-
-Role	Responsibility
-Full-Stack Developer	Backend API + Frontend integration
-Backend Developer	Spring Boot, Security, JPA
-Frontend Developer	React, UI/UX, Admin Dashboard
-Database Engineer	MySQL schema design
